@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+
+    <xs:element name="Topaz" type="TopazType"/>
+    <xs:element name="Sapphire" type="SapphireType"/>
+    <xs:element name="Brilliant" type="BrilliantType"/>
+
+    <xs:complexType name="AbstractStoneType">
+        <xs:sequence>
+            <xs:element name="name" type="xs:string"/>
+            <xs:element name="weight" type="xs:decimal"/>
+            <xs:element name="price" type="xs:decimal"/>
+            <xs:element name="origin" type="xs:string"/>
+        </xs:sequence>
+    </xs:complexType>
+
+    <xs:complexType name="AbstractPreciousStoneType">
+        <xs:complexContent>
+            <xs:extension base="AbstractStoneType">
+                <xs:sequence>
+                    <xs:element name="hardness" type="xs:decimal"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="AbstractNonPreciousStoneType">
+        <xs:complexContent>
+            <xs:extension base="AbstractStoneType">
+                <xs:sequence>
+                    <xs:element name="transparency" type="TransparencyType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:simpleType name="TransparencyType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Opaque"/>
+            <xs:enumeration value="Translucent"/>
+            <xs:enumeration value="Transparent"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="ColorType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Red"/>
+            <xs:enumeration value="Blue"/>
+            <xs:enumeration value="Green"/>
+            <xs:enumeration value="Yellow"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:complexType name="TopazType">
+        <xs:complexContent>
+            <xs:extension base="AbstractNonPreciousStoneType">
+                <xs:sequence>
+                    <xs:element name="shape" type="TopazShapeType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="SapphireType">
+        <xs:complexContent>
+            <xs:extension base="AbstractPreciousStoneType">
+                <xs:sequence>
+                    <xs:element name="country" type="xs:string"/>
+                    <xs:element name="shape" type="SapphireShapeType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:complexType name="BrilliantType">
+        <xs:complexContent>
+            <xs:extension base="AbstractPreciousStoneType">
+                <xs:sequence>
+                    <xs:element name="color" type="ColorType"/>
+                    <xs:element name="shape" type="BrilliantShapeType"/>
+                </xs:sequence>
+            </xs:extension>
+        </xs:complexContent>
+    </xs:complexType>
+
+    <xs:simpleType name="TopazShapeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Cabochon"/>
+            <xs:enumeration value="Faceted"/>
+            <xs:enumeration value="Crystal"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="SapphireShapeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Cabochon"/>
+            <xs:enumeration value="Faceted"/>
+            <xs:enumeration value="Crystal"/>
+            <xs:enumeration value="Fancy"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+    <xs:simpleType name="BrilliantShapeType">
+        <xs:restriction base="xs:string">
+            <xs:enumeration value="Round"/>
+            <xs:enumeration value="Princess"/>
+            <xs:enumeration value="Marquise"/>
+            <xs:enumeration value="Oval"/>
+        </xs:restriction>
+    </xs:simpleType>
+
+</xs:schema>

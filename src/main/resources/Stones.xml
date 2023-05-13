@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Topaz>
+    <name>Blue Topaz</name>
+    <weight>2.5</weight>
+    <price>100.00</price>
+    <origin>Brazil</origin>
+    <transparency>Transparent</transparency>
+    <shape>Faceted</shape>
+</Topaz>
