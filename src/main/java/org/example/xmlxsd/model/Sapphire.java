@@ -1,4 +1,4 @@
-package org.example.XMLXSD.model;
+package org.example.xmlxsd.model;
 
 public class Sapphire extends AbstractPreciousStone {
     private String country;

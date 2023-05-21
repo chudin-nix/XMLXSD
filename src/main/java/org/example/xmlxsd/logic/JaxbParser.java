@@ -1,6 +1,6 @@
-package org.example.XMLXSD.logic;
+package org.example.xmlxsd.logic;
 
-import org.example.XMLXSD.model.AbstractStone;
+import org.example.xmlxsd.model.AbstractStone;
 
 import java.util.List;
 

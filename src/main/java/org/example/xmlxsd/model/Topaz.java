@@ -1,4 +1,4 @@
-package org.example.XMLXSD.model;
+package org.example.xmlxsd.model;
 
 public class Topaz extends AbstractNonPreciousStone {
     private Transparency transparency;

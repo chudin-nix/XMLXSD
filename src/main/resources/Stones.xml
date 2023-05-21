@@ -1,9 +1,25 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<Topaz>
+<?xml version="1.0" encoding="utf-8"?>
+<Topaz xsi:noNamespaceSchemaLocation="Stones.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+       xmlns="file://D:/Обучение/Java/Projects/XMLXSD/src/main/resources/Stones.xsd">
     <name>Blue Topaz</name>
-    <weight>2.5</weight>
-    <price>100.00</price>
-    <origin>Brazil</origin>
-    <transparency>Transparent</transparency>
-    <shape>Faceted</shape>
+    <type>NON_PRECIOUS</type>
+    <transparency>TRANSPARENT</transparency>
 </Topaz>
+        <!--Не успел разобраться с корневым элементом и дочерним элементом, т.е. непонятно могу ли я в одном xml передать сразу
+        3 камня
+<Sapphire>
+<name>Corundum</name>
+<type>PRECIOUS</type>
+<hardness>-42640699999999.8</hardness>
+<rarity>NON_RARE</rarity>
+<country>string</country>
+</Sapphire>
+
+<Brilliant>
+<name>Round Diamond</name>
+<type>PRECIOUS</type>
+<hardness>-42640699999999.8</hardness>
+<rarity>NON_RARE</rarity>
+<color>BLUE</color>
+<form>CABOCHON</form>
+</Brilliant> -->
