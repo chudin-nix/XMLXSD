@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Stones xsi:noNamespaceSchemaLocation="Stones.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="file://D:/Обучение/Java/Projects/XMLXSD/src/test/resources/Stones.xsd">
+    <Topaz>
+        <Name>Blue Topaz</Name>
+        <Type>NON_PRECIOUS</Type>
+        <Transparency>TRANSPARENT</Transparency>
+    </Topaz>
+    <Sapphire>
+        <Name>Corundum</Name>
+        <Type>PRECIOUS</Type>
+        <Hardness>-42640699999999.8</Hardness>
+        <Rarity>NON_RARE</Rarity>
+        <Country>USA</Country>
+    </Sapphire>
+    <Brilliant>
+        <Name>Round Diamond</Name>
+        <Type>PRECIOUS</Type>
+        <Hardness>-42640699999999.8</Hardness>
+        <Rarity>NON_RARE</Rarity>
+        <Color>BLUE</Color>
+        <Form>CABOCHON</Form>
+    </Brilliant>
+</Stones>
