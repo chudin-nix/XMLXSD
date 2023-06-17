@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Stones xsi:noNamespaceSchemaLocation="Stones.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="file://D:/Обучение/Java/Projects/XMLXSD/src/test/resources/Stones.xsd">
+    <Topaz>
+        <Name>Null</Name>
+        <Type>Null</Type>
+        <Transparency>Null</Transparency>
+    </Topaz>
+    <Sapphire>
+        <Name>Null</Name>
+        <Type>Null</Type>
+        <Hardness>Null</Hardness>
+        <Rarity>Null</Rarity>
+        <Country>Null</Country>
+    </Sapphire>
+    <Brilliant>
+        <Name>Null</Name>
+        <Type>Null</Type>
+        <Hardness>Null</Hardness>
+        <Rarity>Null</Rarity>
+        <Color>Null</Color>
+        <Form>Null</Form>
+    </Brilliant>
+</Stones>

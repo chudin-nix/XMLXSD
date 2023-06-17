@@ -22,6 +22,7 @@ public class Director {
     }
 
     public static void main(String[] args) {
+
         try {
             // создание SAX-анализатора
             XMLReader reader = XMLReaderFactory.createXMLReader();

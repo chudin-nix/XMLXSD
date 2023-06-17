@@ -1,7 +1,9 @@
 package org.example.xmlxsd.model;
 
-public class AbstractNonPreciousStone extends AbstractStone {
+public abstract class AbstractNonPreciousStone extends AbstractStone {
     private String alkaliResistance;
+
+    public AbstractNonPreciousStone () {}
 
     public String getAlkaliResistance() {
         return alkaliResistance;

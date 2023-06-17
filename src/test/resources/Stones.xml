@@ -1,6 +1,5 @@
 <?xml version="1.0" encoding="utf-8"?>
-<Stones xsi:noNamespaceSchemaLocation="Stones.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
-        xmlns="file://D:/Обучение/Java/Projects/XMLXSD/src/test/resources/Stones.xsd">
+<Stones xsi:noNamespaceSchemaLocation="Stones.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
     <Topaz>
         <Name>Blue Topaz</Name>
         <Type>NON_PRECIOUS</Type>

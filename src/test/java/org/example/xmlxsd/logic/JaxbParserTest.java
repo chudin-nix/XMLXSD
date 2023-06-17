@@ -1,8 +1,8 @@
 package org.example.xmlxsd.logic;
 
-public class SaxParserTest extends AbstractParserTest {
+public class JaxbParserTest extends AbstractParserTest{
     @Override
     protected Parser createParser() {
-        return new SaxParser();
+        return new JaxbParser();
     }
 }

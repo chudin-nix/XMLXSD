@@ -1,0 +1,24 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Stones xsi:noNamespaceSchemaLocation="Stones.xsd" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+        xmlns="file://D:/Обучение/Java/Projects/XMLXSD/src/test/resources/Stones.xsd">
+    <Topaz>
+        <name>)((*</name>
+        <type>((*)(*</type>
+        <transparency>(^^</transparency>
+    </Topaz>
+    <Sapphire>
+        <name>**()</name>
+        <type>()*(</type>
+        <hardness>(((*</hardness>
+        <rarity>(^))</rarity>
+        <country>^*^</country>
+    </Sapphire>
+    <Brilliant>
+        <name>^((</name>
+        <type>(()</type>
+        <hardness>(^(</hardness>
+        <rarity>((</rarity>
+        <color>(*)(*</color>
+        <form>((^</form>
+    </Brilliant>
+</Stones>

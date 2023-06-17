@@ -1,8 +1,14 @@
 package org.example.xmlxsd.model;
 
-public class AbstractPreciousStone extends AbstractStone {
+import javax.xml.bind.annotation.XmlElement;
+
+public abstract class AbstractPreciousStone extends AbstractStone {
+    @XmlElement(name = "Rarity")
     private Rarity rarity;
+    @XmlElement(name = "Hardness")
     private Double hardness;
+
+    public AbstractPreciousStone () {}
 
     public Rarity getRarity() {
         return rarity;

@@ -1,17 +1,8 @@
 package org.example.xmlxsd.logic;
 
-import org.junit.Test;
-
-public class DomParserTest {
-
-    @Test
-    public testParseShouldParseDataWhenObjectParserCreated () {
-        //given
-
-        //when
-
-        //then
-
+public class DomParserTest extends AbstractParserTest {
+    @Override
+    protected Parser createParser() {
+        return new DomParser();
     }
-
 }

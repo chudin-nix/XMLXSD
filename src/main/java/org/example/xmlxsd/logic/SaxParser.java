@@ -66,12 +66,41 @@ public class SaxParser extends DefaultHandler implements Parser {
                     break;
                 case "Hardness":
                     if (current instanceof Sapphire) {
-                        Double hardness = ((Sapphire) current).getHardness();
+                        Double hardness = Double.valueOf(text);
                         ((Sapphire) current).setHardness(hardness);
                     }else {
-                        Double hardness = ((Brilliant) current).getHardness();
+                        Double hardness = Double.valueOf(text);
                         ((Brilliant) current).setHardness(hardness);
                     }
+                    break;
+                case "Type":
+                    if (current instanceof Topaz) {
+                        TypeStone typeStone = TypeStone.valueOf(text);
+                        ((Topaz) current).setType(typeStone);
+                    } else if (current instanceof Sapphire) {
+                        TypeStone typeStone = TypeStone.valueOf(text);
+                        ((Sapphire) current).setType(typeStone);
+                    } else {
+                        TypeStone typeStone = TypeStone.valueOf(text);
+                        ((Brilliant) current).setType(typeStone);
+                    }
+                    break;
+                case "Name":
+                    if (current instanceof Topaz) {
+                        ((Topaz) current).setName(text);
+                    } else if (current instanceof Sapphire) {
+                        ((Sapphire) current).setName(text);
+                    } else {
+                        ((Brilliant) current).setName(text);
+                    }
+                    break;
+                case "Color":
+                    Color color = Color.valueOf(text);
+                    ((Brilliant) current).setColor(color);
+                    break;
+                case "Form":
+                    Form form = Form.valueOf(text);
+                    ((Brilliant) current).setForm(form);
                     break;
             }
         }

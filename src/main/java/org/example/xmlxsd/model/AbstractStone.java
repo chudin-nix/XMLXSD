@@ -1,7 +1,13 @@
 package org.example.xmlxsd.model;
 
-public class AbstractStone {
+import javax.xml.bind.annotation.*;
+
+@XmlAccessorType(XmlAccessType.FIELD)
+@XmlSeeAlso({Topaz.class, Brilliant.class, Sapphire.class})
+public abstract class AbstractStone {
+    @XmlElement(name = "Name")
     private String name;
+    @XmlElement(name = "Type")
     private TypeStone type;
 
     public String getName() {
